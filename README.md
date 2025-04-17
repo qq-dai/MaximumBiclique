@@ -1,5 +1,5 @@
 # MaximumBiclique
-An implementation of the paper "Efficient Maximum Biclique Search in Large Bipartite Graphs"
+An implementation of the paper "Theoretically and Practically Efficient Maximum Biclique Search"
 
 # Compile
 Using cmake files to compile the source files. For instance,
