@@ -1,2 +1,0 @@
-/usr/bin/ar qc libMBCS.a CMakeFiles/MBCS.dir/MBCS.cpp.o
-/usr/bin/ranlib libMBCS.a

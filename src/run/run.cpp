@@ -41,12 +41,13 @@ int main(int argc, char* argv[]) {
     auto t1 = std::chrono::steady_clock::now();
     
     uint32_t alg = atoi(runAlg.c_str());
-    if (alg == 1 || alg == 0) 
-        mbs.run_basic(alg);
-    else {
+    if (alg >= 1 && alg <= 3) {
         uint32_t alg = atoi(runAlg.c_str());
-        assert(alg == 2 || alg == 3 || alg == 4);
+        assert(alg == 1 || alg == 2 || alg == 3);
         mbs.run(alg);
+    }
+    else {
+        std::cout << "Error: '-a' must be the one in 1 2 3" << std::endl;
     }
 
     auto t2 = std::chrono::steady_clock::now();
